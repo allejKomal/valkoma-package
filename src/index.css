@@ -30,6 +30,7 @@
     --chart-5: 27 87% 67%;
     --radius: 0.5rem
   }
+
   .dark {
     --background: 0 0% 3.9%;
     --foreground: 0 0% 98%;
@@ -62,7 +63,47 @@
   * {
     @apply border-border;
   }
+
   body {
     @apply bg-background text-foreground;
   }
+}
+
+/* For the entire body or specific element */
+::-webkit-scrollbar {
+  width: 3px;
+  /* Set width for vertical scrollbar */
+  height: 3px;
+  /* Set height for horizontal scrollbar */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #000000;
+  /* Scrollbar handle color */
+  border-radius: 10px;
+  /* Rounded corners for the scrollbar thumb */
+  border: px solid #ddd;
+  /* Border around the thumb (optional) */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+  /* Scrollbar handle hover color */
+}
+
+::-webkit-scrollbar-track {
+  background-color: #ffffff;
+  /* Background color of the track (scrollbar background) */
+  border-radius: 10px;
+  /* Rounded corners for the scrollbar track */
+}
+
+::-webkit-scrollbar-track:hover {
+  background-color: #f5f5f5;
+  /* Hover effect for the track */
+}
+
+::-webkit-scrollbar-corner {
+  background-color: transparent;
+  /* The bottom-right corner where horizontal and vertical scrollbars meet */
 }

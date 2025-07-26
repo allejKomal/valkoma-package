@@ -2,7 +2,7 @@
   "name": "valkoma-package",
   "version": "0.1.1",
   "description": "A React TypeScript component library with shadcn/ui components",
-  "main": "dist/index.js",
+  "main": "dist/index.cjs.js",
   "module": "dist/index.esm.js",
   "types": "dist/index.d.ts",
   "type": "module",
@@ -10,6 +10,45 @@
     "dist",
     "src/index.css"
   ],
+  "exports": {
+    ".": {
+      "import": "./dist/index.esm.js",
+      "require": "./dist/index.cjs.js",
+      "types": "./dist/index.d.ts"
+    },
+    "./primitive": {
+      "import": "./dist/primitive.esm.js",
+      "require": "./dist/primitive.cjs.js",
+      "types": "./dist/primitive.d.ts"
+    },
+    "./design-system": {
+      "import": "./dist/design-system.esm.js",
+      "require": "./dist/design-system.cjs.js",
+      "types": "./dist/design-system.d.ts"
+    },
+    "./hooks": {
+      "import": "./dist/hooks.esm.js",
+      "require": "./dist/hooks.cjs.js",
+      "types": "./dist/hooks.d.ts"
+    },
+    "./lib": {
+      "import": "./dist/lib.esm.js",
+      "require": "./dist/lib.cjs.js",
+      "types": "./dist/lib.d.ts"
+    },
+    "./src/index.css": {
+      "default": "./src/index.css"
+    }
+  },
+  "typesVersions": {
+    "*": {
+      "primitive": ["dist/primitive.d.ts"],
+      "design-system": ["dist/design-system.d.ts"],
+      "hooks": ["dist/hooks.d.ts"],
+      "lib": ["dist/lib.d.ts"],
+      "*": ["dist/index.d.ts"]
+    }
+  },
   "scripts": {
     "build": "vite build",
     "dev": "vite",

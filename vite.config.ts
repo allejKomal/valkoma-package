@@ -17,6 +17,8 @@ export default defineConfig({
         index: path.resolve(__dirname, 'src/index.ts'),
         primitive: path.resolve(__dirname, 'src/primitive/index.ts'),
         'design-system': path.resolve(__dirname, 'src/design-system/index.ts'),
+        hooks: path.resolve(__dirname, 'src/hooks/index.ts'),
+        lib: path.resolve(__dirname, 'src/lib/index.ts'),
       },
       name: 'valkoma-package',
       formats: ['es', 'cjs'],
