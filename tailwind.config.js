@@ -2,7 +2,8 @@
 export default {
 	darkMode: ["class"],
 	content: [
-		"./node_modules/@your-scope/my-component-library/**/*.{js,ts,jsx,tsx}",
+		"./src/**/*.{js,ts,jsx,tsx}",
+		"./node_modules/valkoma-package/**/*.{js,ts,jsx,tsx}",
 	],
 	theme: {
 		extend: {
