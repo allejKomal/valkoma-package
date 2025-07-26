@@ -18,7 +18,7 @@ export default defineConfig({
         primitive: path.resolve(__dirname, 'src/primitive/index.ts'),
         'design-system': path.resolve(__dirname, 'src/design-system/index.ts'),
       },
-      name: 'MyComponentLibrary',
+      name: 'valkoma-package',
       formats: ['es', 'cjs'],
       fileName: (format, entryName) => `${entryName}.${format === 'es' ? 'esm' : 'cjs'}.js`,
     },
@@ -26,6 +26,7 @@ export default defineConfig({
       external: [
         'react',
         'react-dom',
+        'react/jsx-runtime',
         '@radix-ui/react-slot',
         'class-variance-authority',
         'lucide-react',
@@ -38,6 +39,7 @@ export default defineConfig({
         globals: {
           react: 'React',
           'react-dom': 'ReactDOM',
+          'react/jsx-runtime': 'jsxRuntime',
           '@radix-ui/react-slot': 'RadixSlot',
           'class-variance-authority': 'cva',
           'lucide-react': 'LucideReact',
