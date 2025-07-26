@@ -7,7 +7,8 @@
   "types": "dist/index.d.ts",
   "type": "module",
   "files": [
-    "dist"
+    "dist",
+    "src/index.css"
   ],
   "exports": {
     ".": {
@@ -35,8 +36,8 @@
       "require": "./dist/lib.cjs.js",
       "types": "./dist/lib.d.ts"
     },
-    "./src/index.css": {
-      "default": "./src/index.css"
+    "./dist/style.css": {
+      "import": "./dist/style.css"
     }
   },
   "typesVersions": {
