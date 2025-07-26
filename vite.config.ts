@@ -52,7 +52,9 @@ export default defineConfig({
     },
     sourcemap: true,
     outDir: 'dist',
+    cssCodeSplit: false,
   },
+  assetsInclude: ['src/index.css'],
   css: {
     postcss: './postcss.config.js',
   },
