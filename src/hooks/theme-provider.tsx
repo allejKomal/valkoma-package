@@ -1,5 +1,6 @@
 import { createContext, useContext, useEffect, useState } from "react"
 import "../index.css"
+import { IntialLoader } from "../tempalte/initial-loader"
 
 type Theme = "dark" | "light" | "system"
 
@@ -7,6 +8,7 @@ type ThemeProviderProps = {
     children: React.ReactNode
     defaultTheme?: Theme
     storageKey?: string
+    showLoader?: boolean
 }
 
 type ThemeProviderState = {
@@ -24,6 +26,7 @@ const ThemeProviderContext = createContext<ThemeProviderState>(initialState)
 export function ThemeProvider({
     children,
     defaultTheme = "system",
+    showLoader = false,
     storageKey = "vite-ui-theme",
     ...props
 }: ThemeProviderProps) {
@@ -59,6 +62,7 @@ export function ThemeProvider({
 
     return (
         <ThemeProviderContext.Provider {...props} value={value}>
+            {showLoader && <IntialLoader />}
             {children}
         </ThemeProviderContext.Provider>
     )
