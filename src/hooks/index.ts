@@ -8,3 +8,4 @@ export * from "./use-debounce";
 export * from "./use-event-listener";
 export * from "./use-throttle";
 export * from "./use-undo-redo";
+export * from "./use-outside-click"
