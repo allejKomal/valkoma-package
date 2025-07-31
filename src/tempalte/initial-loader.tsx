@@ -1,4 +1,5 @@
 "use client";
+import { cn } from "../lib/utils";
 import { MultiStepLoader } from "../primitive/multi-step-loader";
 import { useState, useEffect } from "react";
 
@@ -22,7 +23,7 @@ export function IntialLoader() {
     }, []);
 
     return (
-        <div className="w-full h-[60vh] flex items-center justify-center">
+        <div className={cn(loading && "w-full h-[60vh] flex items-center justify-center")}>
             <MultiStepLoader loadingStates={loadingStates} loading={loading} duration={2000} />
         </div>
     );
