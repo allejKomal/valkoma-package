@@ -1,5 +1,5 @@
 "use client";
-import { MultiStepLoader } from "@/primitive";
+import { MultiStepLoader } from "../primitive/multi-step-loader";
 import { useState, useEffect } from "react";
 
 const loadingStates = [

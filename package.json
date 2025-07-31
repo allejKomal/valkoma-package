@@ -43,19 +43,19 @@
   "typesVersions": {
     "*": {
       "primitive": [
-        "dist/primitive.d.ts"
+        "./dist/primitive.d.ts"
       ],
       "design-system": [
-        "dist/design-system.d.ts"
+        "./dist/design-system.d.ts"
       ],
       "hooks": [
-        "dist/hooks.d.ts"
+        "./dist/hooks.d.ts"
       ],
       "lib": [
-        "dist/lib.d.ts"
+        "./dist/lib.d.ts"
       ],
       "*": [
-        "dist/index.d.ts"
+        "./dist/index.d.ts"
       ]
     }
   },
