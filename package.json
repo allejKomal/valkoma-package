@@ -1,6 +1,6 @@
 {
   "name": "valkoma-package",
-  "version": "0.1.13",
+  "version": "0.1.14",
   "description": "A React TypeScript component library with shadcn/ui components",
   "main": "dist/index.cjs.js",
   "module": "dist/index.esm.js",
