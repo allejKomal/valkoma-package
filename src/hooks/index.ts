@@ -9,3 +9,5 @@ export * from "./use-event-listener";
 export * from "./use-throttle";
 export * from "./use-undo-redo";
 export * from "./use-outside-click"
+export * from "./use-relative-time";
+export * from "./use-keyboard-shortcuts";
