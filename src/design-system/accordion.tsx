@@ -5,7 +5,7 @@ import {
     AccordionTrigger,
 } from "../primitive";
 import * as React from "react";
-import { cn } from "@/lib/utils";
+import { cn } from "../lib/utils";
 
 function getAccordionVariantClasses(variant: string) {
     let variantClass = "";
