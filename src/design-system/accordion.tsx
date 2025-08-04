@@ -133,3 +133,5 @@ export function Accordion({
         </AccordionPrimitive>
     );
 }
+
+Accordion.displayName = "Accordion";
