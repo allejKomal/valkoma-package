@@ -1,6 +1,6 @@
 "use client";
 
-import { cn } from "@/lib/utils";
+import { cn } from "../lib/utils";
 import type React from "react";
 import { useState } from "react";
 import { Checkbox } from "./check-box";
