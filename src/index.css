@@ -36,7 +36,8 @@
     --sidebar-accent: 240 4.8% 95.9%;
     --sidebar-accent-foreground: 240 5.9% 10%;
     --sidebar-border: 220 13% 91%;
-    --sidebar-ring: 217.2 91.2% 59.8%}
+    --sidebar-ring: 217.2 91.2% 59.8%
+  }
 
   .dark {
     --background: 0 0% 3.9%;
@@ -70,7 +71,8 @@
     --sidebar-accent: 240 3.7% 15.9%;
     --sidebar-accent-foreground: 240 4.8% 95.9%;
     --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%}
+    --sidebar-ring: 217.2 91.2% 59.8%
+  }
 }
 
 @layer base {
@@ -120,4 +122,97 @@
 ::-webkit-scrollbar-corner {
   background-color: transparent;
   /* The bottom-right corner where horizontal and vertical scrollbars meet */
+}
+
+
+.code-block-container {
+  margin: 1rem 0;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  border: 1px solid hsl(var(--border));
+}
+
+.code-block-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 1rem;
+}
+
+.code-language {
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: hsl(var(--muted-foreground));
+  text-transform: uppercase;
+}
+
+.code-copy-btn {
+  background: transparent;
+  border: none;
+  color: hsl(var(--muted-foreground));
+  cursor: pointer;
+  padding: 0.25rem;
+  border-radius: 0.25rem;
+  transition: all 0.2s;
+}
+
+.code-copy-btn:hover {
+  background: hsl(var(--accent));
+  color: hsl(var(--accent-foreground));
+}
+
+.code-block {
+  background: hsl(var(--card));
+  color: hsl(var(--card-foreground));
+  padding: 1rem;
+  margin: 0;
+  overflow-x: auto;
+  font-family: 'Courier New', monospace;
+  font-size: 0.875rem;
+  line-height: 1.5;
+}
+
+.inline-code {
+  background: hsl(var(--muted));
+  color: hsl(var(--foreground));
+  padding: 0.125rem 0.25rem;
+  border-radius: 0.25rem;
+  font-family: 'Courier New', monospace;
+  font-size: 0.875rem;
+}
+
+.code-keyword {
+  color: #569cd6;
+  font-weight: 600;
+}
+
+.code-string {
+  color: #ce9178;
+}
+
+.code-comment {
+  color: #6a9955;
+  font-style: italic;
+}
+
+.code-number {
+  color: #b5cea8;
+}
+
+@media (prefers-color-scheme: dark) {
+  .code-keyword {
+    color: #569cd6;
+  }
+
+  .code-string {
+    color: #ce9178;
+  }
+
+  .code-comment {
+    color: #6a9955;
+  }
+
+  .code-number {
+    color: #b5cea8;
+  }
 }
