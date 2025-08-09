@@ -1,8 +1,8 @@
 "use client"
 
 import * as React from "react"
-import { Check, ChevronDown, ChevronsDown, ChevronsUpDown } from "lucide-react"
-import { cn } from "@/lib/utils"
+import { Check, ChevronDown,  } from "lucide-react"
+import { cn } from "../lib/utils"
 import {
     Command,
     CommandEmpty,
